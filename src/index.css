@@ -1,13 +1,25 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.top-btn,
+.middle-btn,
+.bottom-btn {
+  @apply border-t-2 border-t-white block transition-all duration-200;
+}
+.top-btn {
+  transform: translateY(10px);
+}
+.bottom-btn {
+  transform: translateY(-10px);
+}
+.bottom-btn.active {
+  transform: rotate(45deg);
+}
+.top-btn.active {
+  transform: rotate(-45deg);
+}
+.middle-btn.active {
+  @apply hidden;
 }
