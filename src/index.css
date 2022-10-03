@@ -23,3 +23,6 @@
 .middle-btn.active {
   @apply hidden;
 }
+.bg {
+  flex: 2 1 0%;
+}

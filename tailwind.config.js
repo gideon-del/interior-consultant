@@ -13,6 +13,9 @@ module.exports = {
         lora: ["Lora", "serif"],
         montserrat: ["Montserrat", "sans-serif"],
       },
+      fontWeight: {
+        regular: "500",
+      },
     },
   },
   plugins: [],

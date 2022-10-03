@@ -3,25 +3,25 @@ import bg from "../Images/photo1.png";
 import profile from "../Images/photo2.png";
 const Main = () => {
   return (
-    <main className="p-4 flex flex-col space-y-4 md:flex-row flex-1">
-      <div className="flex flex-col space-y-4">
-        <h1 className="text-white text-3xl font-lora font-medium">
+    <main className="p-4 flex flex-col space-y-4 md:flex-row flex-1 md:items-center md:space-y-0  md:space-x-12 md:justify-around md:px-12 ">
+      <div className="flex flex-col space-y-4 flex-1 md:space-y-8 ">
+        <h1 className="text-white text-3xl font-lora font-medium md:text-5xl">
           Modern interior
         </h1>
-        <p className="font-montserrat font-normal  text-white text-sm">
+        <p className="font-montserrat font-normal opacity-50 text-white text-sm md:max-w-[410px] md:pl-1 md:text-2xl">
           A full-Service residential & commercial interior design and staging
           company offering professional organizing & eco-services.
         </p>
         <p className="text-white flex items-center">
           Read more
-          <span class="material-symbols-outlined ml-1">arrow_forward</span>
+          <span class="material-symbols-outlined">trending_flat</span>
         </p>
       </div>
-      <div className="relative">
+      <div className="relative bg">
         <picture>
           <img src={bg} alt="The house" />
         </picture>
-        <div className="bg-bgCol shadow-md max-w-xs md:max-w-md py-4 px-3 absolute bottom-[-9%] left-2">
+        <div className="bg-bgCol shadow-md max-w-xs md:max-w-md py-4 px-3 relative bottom-4 left-2 ">
           <div className="flex flex-col mr-8 space-y-5">
             <div className="flex space-x-2 items-center ">
               <picture className="">
@@ -37,7 +37,8 @@ const Main = () => {
               </p>
             </div>
             <p className="text-white font-lora font-bold text-lg">
-              Designed in 2020 by Aliza Webber
+              Designed in 2020 by
+              <br /> Aliza Webber
             </p>
           </div>
         </div>
