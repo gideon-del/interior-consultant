@@ -21,22 +21,22 @@ const Main = () => {
         <picture>
           <img src={bg} alt="The house" />
         </picture>
-        <div className="bg-bgCol shadow-md max-w-xs md:max-w-md py-4 px-3 relative bottom-4 left-2 ">
-          <div className="flex flex-col mr-8 space-y-5">
+        <div className="bg-bgCol shadow-md max-w-xs md:max-w-md py-4 px-3 relative bottom-4 left-2 md:absolute md:right-10 md:left-auto md:-bottom-8">
+          <div className="flex flex-col mr-20 space-y-5">
             <div className="flex space-x-2 items-center ">
               <picture className="">
                 <img
                   src={profile}
                   alt="Profile"
-                  className="w-8 h-8 rounded-full"
+                  className="w-8 h-8 md:w-12 md:h-12 rounded-full object-center"
                 />
               </picture>
-              <p className="text-white flex flex-col font-montserrat font-medium">
+              <p className="text-white flex flex-col font-montserrat font-medium md:text-sm">
                 Aliza Webber
-                <span className="text-textcol font-xs">Interior designer</span>
+                <span className="text-textcol font-xs md:text-xs">Interior designer</span>
               </p>
             </div>
-            <p className="text-white font-lora font-bold text-lg">
+            <p className="text-white font-lora font-bold text-lg md:text-2xl">
               Designed in 2020 by
               <br /> Aliza Webber
             </p>
